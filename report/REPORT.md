@@ -327,7 +327,7 @@ Validação CSS:
 
 A apresentação será feita com recurso a um slideshow simples, acompanhando a
 demonstração ao vivo do site através do endereço Netlify (servidor HTTP, conforme
-exigido). Estrutura prevista para a apresentação (máximo 10 minutos):
+exigido). Estrutura prevista para a apresentação:
 
 1. Apresentação do tema e dos objetivos ;
 2. Demonstração das quatro páginas e da navegação ;
