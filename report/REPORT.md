@@ -335,8 +335,7 @@ exigido). Estrutura prevista para a apresentação :
 4. Demonstração da responsividade (redimensionar a janela) ;
 5. Resultados da validação W3C e conclusão .
 
-(ficheiro
-presentation/Apresentacao_inf25tig09.pptx)
+(report/presentation/Apresentacao_inf25tig09.pptx)
 
 ---
 
