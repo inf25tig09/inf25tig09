@@ -1,0 +1,291 @@
+/* ===== RESET BÁSICO ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== SELETOR DE TIPO + PROPRIEDADES DE FONTE E TEXTO ===== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2b2b2b;
+    /* FUNDO: cor de fundo + imagem de fundo */
+    background-color: #f0eee9;
+    background-image: url("../img/fundo.png");
+    background-repeat: repeat;
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+    background-color: #3a2d4f;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+header h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* ===== NAVEGAÇÃO (FLUTUAÇÃO + ESTILO DE LISTA) ===== */
+nav {
+    background-color: #5a4a78;
+    overflow: hidden; /* contém os elementos flutuantes */
+}
+
+nav ul {
+    list-style-type: none; /* formatação de estilo para uma lista */
+}
+
+nav ul li {
+    float: left; /* propriedade de flutuação */
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+/* PSEUDO-CLASSE */
+nav ul li a:hover {
+    background-color: #3a2d4f;
+}
+
+/* ===== CONTEÚDO PRINCIPAL (CAIXA: margin, border, padding) ===== */
+main {
+    max-width: 960px;
+    margin: 20px auto;       /* margem */
+    padding: 25px;           /* preenchimento */
+    border: 1px solid #ccc;  /* borda */
+    background-color: #ffffff;
+}
+
+main h2 {
+    color: #3a2d4f;
+    border-bottom: 2px solid #5a4a78;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+}
+
+main h3 {
+    color: #5a4a78;
+    margin: 18px 0 8px 0;
+}
+
+main p {
+    margin-bottom: 12px;
+}
+
+/* ===== TEXTO COM DESTAQUE (altera formatação padrão) ===== */
+strong {
+    color: #7a3030;
+}
+
+em {
+    color: #30597a;
+}
+
+mark {
+    background-color: #ffe27a;
+    color: #2b2b2b;
+}
+
+/* ===== LISTAS DE CONTEÚDO ===== */
+main ul, main ol, main dl {
+    margin: 10px 0 10px 30px;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* ===== FIGURA E IMAGEM ===== */
+figure {
+    text-align: center;
+    margin: 15px 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #999;
+}
+
+figcaption {
+    font-size: 13px;
+    font-style: italic;
+    color: #555;
+}
+
+/* INSERÇÃO DE IMAGEM POR CSS (pseudo-elemento + conteúdo) */
+.icone-filme::before {
+    content: url("../img/claquete.png");
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* ===== SELETOR DE ATRIBUTO ===== */
+a[target="_blank"]::after {
+    content: " \2197"; /* seta indicando link externo */
+    font-size: 12px;
+}
+
+/* ===== TABELA ===== */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 15px 0;
+}
+
+table caption {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+thead {
+    background-color: #5a4a78;
+    color: #ffffff;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 8px 10px;
+    text-align: left;
+}
+
+/* SELETOR COMBINADOR (descendente) + linhas alternadas via pseudo-classe */
+tbody tr:nth-child(even) {
+    background-color: #f4f2f8;
+}
+
+tfoot {
+    background-color: #ece8f2;
+    font-weight: bold;
+}
+
+/* ===== FORMULÁRIO ===== */
+form {
+    margin-top: 15px;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #999;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #5a4a78;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #3a2d4f;
+}
+
+/* ===== SECÇÃO DESTACADA (POSICIONAMENTO) ===== */
+.destaque {
+    position: relative; /* posicionamento */
+    background-color: #f4f2f8;
+    border-left: 4px solid #5a4a78;
+    padding: 12px 15px;
+    margin: 15px 0;
+}
+
+.etiqueta {
+    position: absolute; /* flutuação + posicionamento combinados na aside */
+    top: 8px;
+    right: 10px;
+    font-size: 11px;
+    color: #5a4a78;
+}
+
+/* ===== ASIDE FLUTUANTE (FLUTUAÇÃO + POSICIONAMENTO COMBINADOS) ===== */
+aside.caixa-lateral {
+    float: right;
+    position: relative;
+    width: 220px;
+    margin: 0 0 15px 20px;
+    padding: 12px;
+    background-color: #f4f2f8;
+    border: 1px solid #ccc;
+}
+
+/* ===== SUBSTITUIÇÃO DE ELEMENTO POR IMAGEM ===== */
+/* o texto é escondido e substituído pelo logótipo via background */
+.logo-texto {
+    display: block;
+    width: 420px;
+    max-width: 100%;
+    height: 130px;
+    margin: 15px auto;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-indent: -9999px; /* esconde o texto, mostra a imagem */
+}
+
+/* ===== ESCONDER UM ELEMENTO ===== */
+.escondido {
+    display: none;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+    background-color: #3a2d4f;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+}
+
+footer address {
+    font-style: normal;
+}
+
+/* ===== RESPONSIVIDADE (MEDIA QUERIES) ===== */
+@media (max-width: 768px) {
+    nav ul li {
+        float: none; /* menu passa a vertical */
+    }
+    aside.caixa-lateral {
+        float: none;
+        width: 100%;
+        margin: 15px 0;
+    }
+    main {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 22px;
+    }
+    body {
+        font-size: 14px;
+    }
+}
