@@ -329,21 +329,13 @@ A apresentação será feita com recurso a um slideshow simples, acompanhando a
 demonstração ao vivo do site através do endereço Netlify (servidor HTTP, conforme
 exigido). Estrutura prevista para a apresentação (máximo 10 minutos):
 
-1. Apresentação do tema e dos objetivos (1 min);
-2. Demonstração das quatro páginas e da navegação (3 min);
-3. Demonstração da integração XML → tabela e da manipulação por JavaScript (3 min);
-4. Demonstração da responsividade (redimensionar a janela) (1 min);
-5. Resultados da validação W3C e conclusão (2 min).
+1. Apresentação do tema e dos objetivos ;
+2. Demonstração das quatro páginas e da navegação ;
+3. Demonstração da integração XML → tabela e da manipulação por JavaScript ;
+4. Demonstração da responsividade (redimensionar a janela) ;
+5. Resultados da validação W3C e conclusão .
 
-Durante a apresentação, o grupo terá também o ambiente de desenvolvimento aberto
-(VS Code) para responder rapidamente a questões sobre o código.
 
 ---
 
-## 5. Conclusão
 
-O projeto cumpre todos os requisitos mínimos do enunciado, mantendo um âmbito simples
-e bem organizado. Foram aplicados conceitos de HTML5 semântico, CSS3 (incluindo
-responsividade), XML com validação por schema e JavaScript para conteúdos dinâmicos.
-O trabalho permitiu consolidar competências de estruturação de conteúdos e construção
-de interfaces Web do lado do cliente.
