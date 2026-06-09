@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação Digital | Estúdios e Filmes</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/xml.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Animação Digital</h1>
+        <p>Do 2D Tradicional ao 3D</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="historia.html">História e Técnicas</a></li>
+            <li><a href="estudios.html">Estúdios e Filmes</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Estúdios conhecidos</h2>
+            <p>
+                Vários estúdios marcaram a história da animação. Alguns
+                continuam fiéis ao 2D, enquanto outros lideraram a transição
+                para o <strong>3D digital</strong>. Abaixo ficam quatro dos
+                mais influentes:
+            </p>
+            <ul>
+                <li class="icone-filme">
+                    <strong>Walt Disney</strong> &mdash; fundado em 1923, é o
+                    estúdio mais antigo da lista. Criou os primeiros clássicos
+                    em 2D e mais tarde adaptou-se ao 3D;
+                </li>
+                <li class="icone-filme">
+                    <strong>Pixar</strong> &mdash; pioneira do 3D digital,
+                    produziu <em>Toy Story</em> em 1995, o primeiro filme
+                    totalmente feito por computador;
+                </li>
+                <li class="icone-filme">
+                    <strong>DreamWorks</strong> &mdash; conhecida por filmes
+                    em 3D com humor, como a saga <em>Shrek</em>;
+                </li>
+                <li class="icone-filme">
+                    <strong>Studio Ghibli</strong> &mdash; estúdio japonês que
+                    manteve a animação 2D desenhada à mão como marca de estilo.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Filmes (dados do XML)</h2>
+            <p>
+                A tabela seguinte é gerada automaticamente a partir de um
+                documento <em>XML</em> através de JavaScript, sem recorrer a
+                qualquer base de dados ou servidor. Reúne seis filmes de
+                diferentes épocas e estúdios, mostrando a passagem do 2D
+                tradicional para o 3D digital.
+            </p>
+            <p>
+                Repara que os títulos mais antigos, como <em>Branca de Neve</em>
+                (1937) e <em>O Rei Leão</em> (1994), foram feitos em 2D, enquanto
+                os mais recentes, como <em>Frozen</em> (2013), já são em 3D. O
+                ano de <mark>2001</mark> é curioso: aparece tanto em 2D
+                (<em>A Viagem de Chihiro</em>) como em 3D (<em>Shrek</em>),
+                mostrando que as duas técnicas conviveram durante anos.
+            </p>
+
+            <table>
+                <caption>Lista de filmes de animação</caption>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Estúdio</th>
+                        <th>Ano</th>
+                        <th>Técnica</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo-tabela-xml">
+                    <!-- preenchido por JavaScript -->
+                </tbody>
+            </table>
+
+            <!-- hiperligação para descarregar o documento XML -->
+            <p>
+                <a href="xml/animacao.xml" download>Descarregar o documento XML</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Curiosidades</h2>
+
+            <p id="texto-curiosidade">
+                Clica no botão para revelares uma curiosidade sobre a Pixar.
+            </p>
+            <button type="button" onclick="alterarTexto()">Mostrar curiosidade</button>
+
+            <p>
+                <button type="button" onclick="alternarCuriosidade()">
+                    Mostrar/Esconder caixa extra
+                </button>
+            </p>
+            <div id="caixa-extra" class="destaque escondido">
+                <p>
+                    O Studio Ghibli, do Japão, manteve durante muitos anos a
+                    animação tradicional desenhada à mão.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Saber mais</h2>
+            <p>Sites oficiais de alguns estúdios:</p>
+            <ul>
+                <li><a href="https://www.pixar.com" target="_blank">Pixar</a></li>
+                <li><a href="https://www.ghibli.jp" target="_blank">Studio Ghibli</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Grupo inf25tig09 &mdash; Lucas Gutierrez e Iury Gabriel<br>
+            Tecnologias da Internet
+        </address>
+    </footer>
+
+</body>
+</html>
