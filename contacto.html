@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animação Digital | Contacto</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
 
@@ -30,7 +31,7 @@
                 <strong>animação digital</strong>? Preenche o formulário.
             </p>
 
-            <form action="#" method="post">
+            <form id="form-contacto" onsubmit="return enviarFormulario(event)">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
 
@@ -49,12 +50,17 @@
 
                 <button type="submit">Enviar</button>
             </form>
+
+            <p id="mensagem-enviada" class="escondido destaque">
+                Obrigado! A tua mensagem foi registada (demonstração — este site
+                não envia dados para nenhum servidor).
+            </p>
         </section>
 
         <section>
             <h2>Onde estamos</h2>
             <address>
-                 Universidade UMAIA &mdash; Curso de Tecnologias da Internet<br>
+                Universidade Umaia &mdash; Curso de Tecnologias da Internet<br>
                 Email: <a href="mailto:inf25tig09@exemplo.pt">inf25tig09@exemplo.pt</a>
             </address>
         </section>
