@@ -15,3 +15,16 @@ function alternarCuriosidade() {
         caixa.style.display = "none";
     }
 }
+
+// Trata o envio do formulário de contacto sem recarregar a página.
+// Como o site é estático (sem servidor), apenas mostra uma confirmação.
+function enviarFormulario(evento) {
+    evento.preventDefault(); // impede a submissão e o "page not found"
+
+    var aviso = document.getElementById("mensagem-enviada");
+    aviso.style.display = "block";
+
+    document.getElementById("form-contacto").reset(); // limpa os campos
+
+    return false;
+}
